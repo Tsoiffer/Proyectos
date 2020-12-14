@@ -14,9 +14,13 @@ Text #ffffff
 */
 
 body{
-    width: auto;
-    background-image: url(../imagenes/Logo\ Viejo\ Empedrado.jpg);
+
+    width: 100%;
+    background-image: url(../imagenes/Viejo\ 4.jpeg);
+    background-attachment: fixed;
     background-size: cover;
+    background-position-x: center;
+    background-size: cover top;
     color: #ffffff;
 }
 header{
@@ -72,15 +76,18 @@ section h1{
 }
 
 footer{
+    background-color: rgba(150, 18, 18, 0.9);
     height: 7vh;
     width: 100%;
     text-align: center;
 }
 footer div a img{
+    background-color: rgba(150, 18, 18, 0.9);
     width: 5vh;
     margin: 1vh;
 }
 footer .container .row{
+    
     text-align: center;
 }
 footer div a :hover{
@@ -91,6 +98,7 @@ footer div a :hover{
 .centrado{
     align-content: center;
     text-align: center;
+
 }
 
 .espacio{
@@ -101,4 +109,36 @@ iframe{
 }
 .videos{
     height: 80%;
+    padding-bottom: 4vh;
+    padding-top: 4vh;;
+}
+.historia{
+    text-align: justify;
+}
+.discografia{
+    height: 80%;
+    padding-bottom: 4vh;
+}
+
+.disco{
+    width: 44vh;
+    border-radius: 3vh;
+    margin: 0vh;
+    
+
+    
+}
+hr{
+    color: #7f0000;
+    opacity: 1;
+    border-radius: 10vh;
+    border: 0.3vh;
+    border-style: solid;
+}
+iframe{
+    width: 90%;
+}
+.discografia p{
+    line-height: 1vh;
+
 }
