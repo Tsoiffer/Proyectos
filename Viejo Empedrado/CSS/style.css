@@ -12,9 +12,12 @@ Dark: #7f0000
 
 Text #ffffff
 */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-
+    height: 100vh;
     width: 100%;
     background-image: url(../imagenes/Viejo\ 4.jpeg);
     background-attachment: fixed;
@@ -24,19 +27,18 @@ body{
     color: #ffffff;
 }
 header{
-    background-color: rgba(55, 55, 55, 0.9);
-    padding: 1vh;
     height: 10vh;
 }
-
-nav img{
-    width: 8vh;
-    margin-left: 2vh;
+nav{
+    top: 0;
+    position : fixed;
+    background-color: rgba(55, 55, 55, 0.9);
+    width: 100%;
+    padding: 0.5vh;
+    height: 10vh;
 }
-
-nav img nav img{
-    color: white;
-    width: 8vh;
+nav img{
+    width: 9vh;
     margin-left: 2vh;
 }
 
@@ -47,86 +49,63 @@ nav ul {
 }
 nav ul li{
     text-decoration: none;
-    padding: 1vh;
+    padding: 1.5vh;
 }
 nav ul li a{
-    height: 1vh;  ;
+    height: 1vh;
     color: #ffffff;
 }
 nav ul li a:hover{
     color: #f05545;
 }
 section{
-    height: 79vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
     border-radius: 5vh;
     border-width: 5vh;
     border-color: #7f0000;
     margin-top: 3vh;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
     background-color: rgba(55, 55, 55, 0.9);
 }
-
-
-section .titulo{
-    align-self: center;
-}
 section h1{
-    margin-top: 3vh;
     text-align: center;
 }
-
 footer{
     background-color: rgba(150, 18, 18, 0.9);
-    height: 7vh;
+    height: 5vh;
     width: 100%;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 footer div a img{
-    background-color: rgba(150, 18, 18, 0.9);
-    width: 5vh;
-    margin: 1vh;
-}
-footer .container .row{
-    
-    text-align: center;
-}
-footer div a :hover{
-    width: 7vh;
-    margin: 0vh;
+    width: 4vh;
+    margin: 0.5vh;
 }
 
+footer div a :hover{
+    width: 5vh;
+    margin: 0vh;
+}
 .centrado{
     align-content: center;
     text-align: center;
-
 }
-
 .espacio{
     margin-top: 10vh;
 }
 iframe{
     border-radius: 4vh;
 }
-.videos{
-    height: 80%;
-    padding-bottom: 4vh;
-    padding-top: 4vh;;
-}
 .historia{
     text-align: justify;
 }
-.discografia{
-    height: 80%;
-    padding-bottom: 4vh;
-}
-
 .disco{
     width: 44vh;
     border-radius: 3vh;
     margin: 0vh;
-    
 
-    
 }
 hr{
     color: #7f0000;
@@ -140,5 +119,23 @@ iframe{
 }
 .discografia p{
     line-height: 1vh;
+}
 
+.carousel-inner img{
+    object-fit: cover ;
+    object-position: center;
+    height: 100%;
+}
+.carousel-inner{
+    height: 59vh;
+}
+.splash{
+    margin-right: 5vh;
+    margin-left: 5vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    align-content: center;
+}
+.final{
+    height: 1vh;
 }
