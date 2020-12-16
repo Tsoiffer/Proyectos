@@ -15,6 +15,7 @@ Text #ffffff
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 body{
     height: 100vh;
@@ -95,9 +96,6 @@ footer div a :hover{
 .espacio{
     margin-top: 10vh;
 }
-iframe{
-    border-radius: 4vh;
-}
 .historia{
     text-align: justify;
 }
@@ -116,6 +114,7 @@ hr{
 }
 iframe{
     width: 90%;
+    border-radius: 4vh;
 }
 .discografia p{
     line-height: 1vh;
@@ -123,18 +122,26 @@ iframe{
 
 .carousel-inner img{
     object-fit: cover ;
-    object-position: center;
-    height: 100%;
+    object-position: top;
+    height: 55vh;
+    width: 100%;
+    border-radius: 4vh;
+}
+.carousel-inner iframe{
+    height: 55vh;
+    
 }
 .carousel-inner{
-    height: 59vh;
+    height: 55vh;
+    margin: 0;
 }
 .splash{
-    margin-right: 5vh;
-    margin-left: 5vh;
+    margin-right: 5%;
+    margin-left: 5%;
     padding-bottom: 3vh;
     text-align: center;
     align-content: center;
+    
 }
 .final{
     height: 1vh;
