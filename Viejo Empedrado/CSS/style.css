@@ -41,16 +41,8 @@ nav{
     height: 10vh;
 }
 nav  img{
-    width: 9vh;
-    margin-left: 2vh;
-}
-.boton{
-    margin-left: 50%;
-    float: right;
-}
-.navbar-collapse{
-    background-color: #7f0000;
-    width: auto;
+
+    height: 8vh;
 }
 
 nav ul {
@@ -162,9 +154,3 @@ iframe{
     height: 1vh;
 }
 
-
-@media only screen and (orientation: landscape) {
-    body {
-      background-color: lightblue;
-    }
-  }
