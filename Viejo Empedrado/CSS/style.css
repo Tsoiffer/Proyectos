@@ -33,14 +33,24 @@ header{
 nav{
     top: 0;
     position : fixed;
+    z-index: 9999;
     background-color: rgba(55, 55, 55, 0.9);
+    color: #ffffff;
     width: 100%;
     padding: 0.5vh;
     height: 10vh;
 }
-nav img{
+nav  img{
     width: 9vh;
     margin-left: 2vh;
+}
+.boton{
+    margin-left: 50%;
+    float: right;
+}
+.navbar-collapse{
+    background-color: #7f0000;
+    width: auto;
 }
 
 nav ul {
@@ -48,15 +58,20 @@ nav ul {
     margin-top: 1vh;
     margin-right: 2vh;
 }
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    flex-direction: row-reverse !important;
+    display: inline-block !important;
+}
 nav ul li{
     text-decoration: none;
     padding: 1.5vh;
 }
-nav ul li a{
+ul li a{
     height: 1vh;
     color: #ffffff;
 }
-nav ul li a:hover{
+
+#navbarNav ul li a:hover{
     color: #f05545;
 }
 section{
@@ -146,3 +161,10 @@ iframe{
 .final{
     height: 1vh;
 }
+
+
+@media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }
