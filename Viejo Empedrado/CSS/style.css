@@ -19,6 +19,7 @@ Text #ffffff
 }
 h1{
     font-family: 'Big Shoulders Stencil Text', cursive;
+    text-align: center;
 }
 body{
     height: 100vh;
@@ -30,6 +31,7 @@ body{
     background-size: cover top;
     color: #ffffff;
 }
+
 header{
     height: 10vh;
 }
@@ -37,7 +39,7 @@ nav{
     top: 0;
     position : fixed;
     z-index: 9999;
-    background-color: rgba(55, 55, 55, 0.9);
+    background-color: rgb(20, 20, 20);
     color: #ffffff;
     width: 100%;
     padding: 0.5vh;
@@ -56,32 +58,28 @@ nav ul {
     display: inline-block !important;
 }
 nav ul li{
-    text-decoration: none;
     padding: 1.5vh;
 }
 ul li a{
     height: 1vh;
     color: #ffffff;
 }
-
 #navbarNav ul li a:hover{
     color: #f05545;
 }
+
 section{
     padding-top: 2vh;
     padding-bottom: 3vh;
-    border-radius: 5vh;
-    border-width: 5vh;
+    width: 100%;
     border-color: #7f0000;
     margin-top: 3vh;
     margin-bottom: 5vh;
     background-color: rgba(55, 55, 55, 0.9);
 }
-section h1{
-    text-align: center;
-}
+
+
 footer{
-    background-color: rgba(150, 18, 18, 0.9);
     height: 5vh;
     width: 100%;
     text-align: center;
@@ -91,27 +89,39 @@ footer{
 footer div a img{
     width: 4vh;
     margin: 0.5vh;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
 }
-
 footer div a :hover{
     width: 5vh;
     margin: 0vh;
 }
+
+
 .centrado{
     align-content: center;
     text-align: center;
 }
 .espacio{
-    margin-top: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.inicio{
+background-color: #212529;
+border-radius: 0;
+margin-bottom: 0;
+}
+.bodyinicio{
+    z-index: 9999;
+    background-color: #212529;
+    background-image: none;
 }
 .historia{
     text-align: justify;
 }
 .disco{
     width: 44vh;
-    border-radius: 3vh;
     margin: 0vh;
-
 }
 hr{
     color: #7f0000;
@@ -120,32 +130,20 @@ hr{
     border: 0.3vh;
     border-style: solid;
 }
-iframe{
-    width: 90%;
-    border-radius: 4vh;
-}
-.discografia p{
-    line-height: 1vh;
-}
 
 .carousel-inner img{
     object-fit: cover ;
     object-position: top;
-    height: 55vh;
+    height: 65vh;
+    margin-bottom: 0;
     width: 100%;
-    border-radius: 4vh;
 }
-.carousel-inner iframe{
-    height: 55vh;
-    
-}
+
 .carousel-inner{
-    height: 55vh;
     margin: 0;
 }
 .splash{
-    margin-right: 5%;
-    margin-left: 5%;
+
     padding-bottom: 3vh;
     text-align: center;
     align-content: center;
@@ -155,3 +153,27 @@ iframe{
     height: 1vh;
 }
 
+.fotohistoria{
+    margin-top: 8vh ;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 5vh;
+}
+.spotify{
+    width: 50vh;
+    height: 50vh;
+    padding: 0;
+    margin: 0vh;
+    visibility: hidden;
+    
+}
+.imagendisco:hover .spotify{
+    visibility: visible;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.videos iframe{
+    width: 90%;
+}
